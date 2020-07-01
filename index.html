@@ -28,7 +28,7 @@
 		<div class="d-flex flex-row pb-2">
 			<h3>Sales Tracker</h3>
 		</div>
-		
+
 		<!-- Yearly Number -->
 		<div class="row">
 			<div class="col-12 w-100">
@@ -45,12 +45,14 @@
 				<div class="graphSec px-2">
 					<h4 class="text-center py-3">Monthly Sales</h4>
 					<!-- Monthly Sales -->
+					<canvas id="monthlySales" width="400" height="300"></canvas>
 				</div>
 			</div>
 			<div class="col-12 col-md-6 w-100">
 				<div class="graphSec px-2">
 					<h4 class="text-center py-3">Department Sales</h4>
 					<!-- Dept Sales -->
+					<canvas id="deptSales" width="400" height="300"></canvas>
 				</div>
 			</div>
 		</div>
@@ -62,6 +64,8 @@
 			<h3>Recent Sales</h3>
 			<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleModal"><span
 					class="oi oi-plus pr-2"></span>Add Sale</button>
+			<button type="button" class="btn btn-outline-success"
+				onclick="reset()"><span class="oi oi-plus pr-2"></span>Reset</button>
 		</div>
 
 		<!-- New Sales View -->
